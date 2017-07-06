@@ -1,4 +1,4 @@
-FROM eleidan/buildpack-deps:jessie-curl
+FROM eleidan/buildpack-deps-curl:jessie
 
 LABEL maintainer="Oleg Kulyk" \
       description="Debian GNU/Linux jessie, scm" \

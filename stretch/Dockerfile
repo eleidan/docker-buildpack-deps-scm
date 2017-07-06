@@ -1,4 +1,4 @@
-FROM eleidan/buildpack-deps:stretch-curl
+FROM eleidan/buildpack-deps-curl:stretch
 
 LABEL maintainer="Oleg Kulyk" \
       description="Debian GNU/Linux stretch, scm" \

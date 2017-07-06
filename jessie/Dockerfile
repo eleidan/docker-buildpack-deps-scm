@@ -1,7 +1,7 @@
 FROM eleidan/buildpack-deps:jessie-curl
 
 LABEL maintainer="Oleg Kulyk" \
-      description="Debian GNU/Linux 8 (jessie), scm" \
+      description="Debian GNU/Linux jessie, scm" \
       run="docker run -it --rm -v $(pwd):/home/phantom/app eleidan/buildpack-deps:jessie-scm" \
       version="2017-07-06"
 

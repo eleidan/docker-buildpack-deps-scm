@@ -5,7 +5,7 @@ LABEL maintainer="Oleg Kulyk" \
       run="docker run -it --rm -v $(pwd):/home/phantom/app eleidan/buildpack-deps-scm:stretch" \
       version="2017-07-06"
 
-ENV SERVICE_NAME="buildpack-deps:stretch-scm"
+ENV SERVICE_NAME="buildpack-deps-scm:stretch"
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
         bzr \

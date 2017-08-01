@@ -7,7 +7,8 @@ LABEL maintainer="Oleg Kulyk" \
 
 ENV SERVICE_NAME="buildpack-deps-scm:centos-6.6"
 
-RUN yum -y install \
+RUN yum install -y yum-plugin-ovl \
+    && yum -y install \
         bzr \
         git \
         mercurial \

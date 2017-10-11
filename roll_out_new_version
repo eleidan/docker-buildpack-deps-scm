@@ -99,7 +99,7 @@ validate_input
 BASE_RELEASE="jessie"
 case $FAMILY in
   ubuntu )
-    BASE_RELEASE="xenial"
+    BASE_RELEASE="16.04"
     ;;
   centos )
     BASE_RELEASE="6.6"

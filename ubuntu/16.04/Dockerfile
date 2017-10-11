@@ -1,11 +1,11 @@
-FROM eleidan/buildpack-deps-curl:trusty
+FROM eleidan/buildpack-deps-curl:ubuntu-16.04
 
 LABEL maintainer="Oleg Kulyk" \
-      description="Ubuntu 14.04 trusty, scm" \
-      run="docker run -it --rm -v $(pwd):/home/phantom/app eleidan/buildpack-deps-scm:trusty" \
+      description="Ubuntu 16.04, scm" \
+      run="docker run -it --rm -v $(pwd):/home/phantom/app eleidan/buildpack-deps-scm:ubuntu-16.04" \
       version="2017-07-09"
 
-ENV SERVICE_NAME="buildpack-deps-scm:trusty"
+ENV SERVICE_NAME="buildpack-deps-scm:ubuntu-16.04"
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
         bzr \
